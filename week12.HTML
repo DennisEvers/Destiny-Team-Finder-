@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="week12.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="bg-light container">
+<!--This is the stylized title for the app and the words under explaing the app. It is also 
+stylized to have a background image and modified text-->
+    <div>
+        <h1 class="text-center bkg p-5 fw-bolder light">Destiny Fireteam Finder</h1>
+        <p class="text-center">Welcome to your dynamic and intuitive way to find other Fireteam Members. You can post your details
+            or find someone elses. The goal is to build up a Great community to make the game more enjoyable 
+            and to make sure that you have a great community to connect with! Fill out 
+            your information below and begin finding that perfect Fire Team so you can finally<br>
+            <b>BECOME LEGEND!</b>
+        </p>
+    </div>
+    <!--this is a line through the app as well as the title for the character registration-->
+    <hr>
+    <h2 class="text-center fw-bolder fs-1 blue">REGISTER YOUR CHARACTER</h2>
+    <div>
+        <!-- this is the form section where i have labels and iputs for 5 different pieces of information
+        all the inputs have place holders and there are two drop down selections and 3 text inputs where you input the info.-->
+        <form class="form-control bg-secondary">
+            <div>
+                <label for="playerName" class="form-label fw-bold">Player Name</label>
+                <input id="playerName" type="text" class="form-control" placeholder="Character Name">
+            </div>
+            <div>
+                <label for="playerClass" class="form-label fw-bold">Player Class</label>
+                <select id="playerClass" name="Player Class" id="class" class="form-select">
+                    <option >Class Select!</option>
+                    <option value="Warlock">Warlock</option>
+                    <option value="Titan">Titan</option>
+                    <option value="Hunter">Hunter</option>
+                  </select>
+            </div>
+            <div>
+                <label for="playerGuild" class="form-label fw-bold">Player Guild</label>
+                <input id="playerGuild" type="text" class="form-control" placeholder="Current Characters Guild">
+            </div>
+            <div>
+                <label for="powerLevel" class="form-label fw-bold">Power Level</label>
+                <input id="powerLevel"  class=" text form-control"  placeholder="Current Character Power Level">
+            </div>
+            <div>
+                <label for="endGame" class="form-label fw-bold">End Game Focus</label>
+                <select name="GameFocus" id="endGame"  class="form-select">
+                    <option >End Game Focus!</option>
+                    <option value="Raid/Dungeon">Raid/Dungeon</option>
+                    <option value="PVP">PVP</option>
+                    <option value="PVE">PVE</option>
+                  </select>
+            </div>
+            <div class="text-center p-5">
+                <button id="submitFireteam" class="btn btn-primary fs-3">Submit Player</button>
+                <!--this is a button at the end of the form used to submit all the data to the table-->
+            </div>
+        </form>
+    </div>
+    <!--this is the title for the table where all the inputed data is displayed as well as info how to use the data -->
+    
+    <h2 class="text-center blue fw-bolder pt-5 mt-3">CURRENT REGISTERED PLAYERS</h2>
+    <p class="text-center">Just look for players that are looking for the same gameplay you are around your
+        level and then add them using there Player Name!
+    </p>
+    
+    <!--this is a table created to store all the user inputed data and display it in a nice easy to read for that is 
+    stylized and labled-->
+    
+    <div class="pt-5 pb-5 mt-5 mb-5">
+        <table class="table table-striped table-primary">
+            <thead>
+                <th>Player Name</th>
+                <th>Player Class</th>
+                <th>Player Guild</th>
+                <th>Power Level</th>
+                <th>End Game Focus</th>
+                <th>Player ID</th>
+                <th>Delete Player</th>
+            </thead>
+            <tbody id="tableMain">
+                
+            </tbody>
+        </table>
+    </div>
+<!-- this is another line and below it is another title as well as more stylized writing explaining what to do in order to update the data
+it also contains the form that contains all the fields in order to be able to update your current players data using the ID that is assigned to 
+each player it also has 5 fields 3 text input as well as 2 drop down selections and place holders on all of them -->
+    <hr>
+    <div>
+        <h3 class="text-center fw-bolder fs-2 blue">Update Character Information</h3>
+        <p class="text-center fw-bold fs-4 fst-italic red ">Make sure when you update your character that you update every single field!</p>
+ <form class="bg-secondary">
+    <div>
+        <label for="updateId" class="form-lable fw-bold">Player ID</label>
+        <input id="updateId" class="form-control" placeholder="Current PLAYER ID">
+      </div>
+    <div>
+        <label for="updateName" class="form-label fw-bold">Player Name</label>
+        <input id="updateName" type="text" class="form-control" placeholder="New or Old Player Name">
+    </div>
+    <div>
+        <label for="updateClass" class="form-label fw-bold">Player Class</label>
+        <select id="updateClass" name="Player Class" id="class"  class="form-select">
+            <option >Update Class!!!</option>
+            <option value="Warlock">Warlock</option>
+            <option value="Titan">Titan</option>
+            <option value="Hunter">Hunter</option>
+          </select>
+    </div>
+    <div>
+        <label for="updateGuild" class="form-label fw-bold">Player Guild</label>
+        <input id="updateGuild" type="text" class="form-control" placeholder="Current or New Player Guild">
+    </div>
+        
+        <div>
+            <label for="updateLevel" class="form-label fw-bold">Power Level</label>
+            <input id="updateLevel" class="text form-control" placeholder="Current Power Level">
+        </div>
+        <div>
+            <label for="updateEndGame" class="form-label fw-bold">End Game Focus</label>
+            <select name="GameFocus" id="updateEndGame"  class="form-select">
+                <option >Update End Game Focus!!!</option>
+                <option value="Raid/Dungeon">Raid/Dungeon</option>
+                <option value="PVP">PVP</option>
+                <option value="PVE">PVE</option>
+              </select>
+        </div>
+        <div class="text-center p-5">
+        <button id="update" class="btn btn-success fs-3" onclick="updatePlayer">Update</button>
+        <p class="text-center red">Make Sure All fields are filled out before you Update!</p>
+        </div>
+  </form>
+  <!--the bottom of the page is a button with some text below it for info thats stylized as well
+as a footer and an image in the bakground of the footer to make it look nice.-->
+
+    </div class="p-5">
+    <div>
+
+    </div>
+    <hr>
+
+    <footer class="text-center fw-bolder fs-3 p-4 footer light"> BECOME LEGEND</footer>
+    
+
+   
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="week12.js"></script>
+   
+</body>
+</html>

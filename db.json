@@ -1,0 +1,44 @@
+{
+  "destinyFireteam": [
+    {
+      "playerName": "Victory",
+      "playerClass": "Titan",
+      "playerGuild": "Winners",
+      "powerLevel": "1880",
+      "endGame": "Raid/Dungeon",
+      "id": 1
+    },
+    {
+      "playerName": "ninja",
+      "playerClass": "Warlock",
+      "playerGuild": "Destroyers",
+      "powerLevel": "1850",
+      "endGame": "Raid/Dungeon",
+      "id": 7
+    },
+    {
+      "playerName": "Ninjami",
+      "playerClass": "Titan",
+      "playerGuild": "Destroyers",
+      "powerLevel": "1750",
+      "endGame": "PVE",
+      "id": 8
+    },
+    {
+      "playerName": "Keechwa",
+      "playerClass": "Hunter",
+      "playerGuild": "Knifers",
+      "powerLevel": "1795",
+      "endGame": "PVP",
+      "id": 9
+    },
+    {
+      "playerName": "WOOT",
+      "playerClass": "Warlock",
+      "playerGuild": "YES !!!!!",
+      "powerLevel": "1798",
+      "endGame": "PVP",
+      "id": 11
+    }
+  ]
+}

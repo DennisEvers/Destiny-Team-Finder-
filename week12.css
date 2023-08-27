@@ -1,0 +1,30 @@
+.bkg {
+    background-image: url(https://user-images.githubusercontent.com/4038675/33161305-d355c1e0-cfdf-11e7-8eea-9c388fc721d4.jpg);
+    background-position: center top 40%;
+    background-size: cover;
+}
+/*this is the background image used to style the top title*/
+.light {
+    color: rgb(255, 255, 255);
+    text-shadow: .2rem .1rem .3rem black;
+    font-size: 60px;
+}
+/*this is the text to make it white with a black shadow*/
+.red {
+    color: crimson;
+    text-shadow: .05rem .05rem .05rem black;
+}
+/*this is to style text red with a black shadow*/
+
+.footer {
+    background-image: url(https://static.fanbyte.com/uploads/2019/10/Iron_Banner_v460.jpg);
+    background-size: cover;
+    background-position: center top 10%;
+}
+/*this is the background image designed to be the footer background*/
+
+.blue {
+    color: rgb(0, 0, 0);
+    text-shadow: .05rem .05rem .5rem rgb(4, 129, 167);
+}
+/*this is to stylize text black with a blue shadow*/
